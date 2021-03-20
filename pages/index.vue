@@ -2,9 +2,15 @@
     <div class="container">
         <div class="w-1/2 mx-auto">
             <h1 class="text-3xl">nuxt-blog-2</h1>
-        </div>
-        <div v-for="(post, index) in posts" :key="index">
-            {{post.title}}
+            <div class="my-20" v-for="(post, index) in posts" :key="index">
+                <h1 class="text-3xl mb-5">{{ post.title }}</h1>
+                <p class="mb-5">
+                    {{ post.abstract }}
+                </p>
+                <p class="text-gray-500">
+                    Read more
+                </p>
+            </div>
         </div>
     </div>
 </template>
