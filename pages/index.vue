@@ -1,16 +1,20 @@
 <template>
     <div class="container">
-        <div class="w-1/2 mx-auto">
+        <div class="w-1/2 mx-auto my-20">
             <h1 class="text-3xl">nuxt-blog-2</h1>
-            <div class="my-20" v-for="(post, index) in posts" :key="index">
-                <h1 class="text-3xl mb-5">{{ post.title }}</h1>
-                <p class="mb-5">
-                    {{ post.abstract }}
-                </p>
-                <p class="text-gray-500">
-                    Read more
-                </p>
-            </div>
+            <nuxt-link v-for="(post, index) in posts" :key="index" :to="post._id">
+                <div
+                    class="my-20 cursor-pointer text-gray-600 hover:text-gray-900"
+                >
+                    <h1 class="text-5xl font-semibold mb-5">
+                        {{ post.title }}
+                    </h1>
+                    <p class="mb-5">
+                        {{ post.abstract }}
+                    </p>
+                    <p class="text-gray-500">Read more</p>
+                </div>
+            </nuxt-link>
         </div>
     </div>
 </template>
