@@ -6,13 +6,13 @@
                 <div
                     class="my-20 cursor-pointer text-gray-600 hover:text-gray-900"
                 >
-                    <h1 class="text-5xl font-semibold mb-5">
+                    <h1 class="text-5xl font-semibold mb-10">
                         {{ post.title }}
                     </h1>
                     <p class="mb-5">
                         {{ post.abstract }}
                     </p>
-                    <p class="text-red-500">Leia Mais</p>
+                    <p class="text-red-500">Leia Mais &rarr;</p>
                 </div>
             </nuxt-link>
         </div>
