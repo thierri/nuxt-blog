@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="w-1/2 mx-auto my-20">
-            <h1 class="text-3xl mb-10">nuxt-blog-2</h1>
+            <h1 class="text-3xl font-semibold text-red-600">Super Blog</h1>
             <div v-if="error" class="my-20">
                 {{error}}
             </div>
